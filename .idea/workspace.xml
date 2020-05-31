@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d486b73-73ab-40ec-881b-08852ef955b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/academy/learnprogramming/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/academy/learnprogramming/NumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/academy/learnprogramming/NumberGeneratorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/beans.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/academy/learnprogramming/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/academy/learnprogramming/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -87,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590942748045</updated>
-      <workItem from="1590942749883" duration="2560000" />
+      <workItem from="1590942749883" duration="3738000" />
     </task>
     <servers />
   </component>
@@ -99,22 +99,30 @@
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="0" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1590948436125" />
-    <state width="834" height="152" key="GridCell.Tab.0.bottom" timestamp="1590948450488">
+    <state x="806" y="155" key="#com.intellij.ide.util.MemberChooser" timestamp="1590949141809">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
-    <state width="834" height="152" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1590948450488" />
-    <state width="834" height="152" key="GridCell.Tab.0.center" timestamp="1590948450487">
+    <state x="806" y="155" key="#com.intellij.ide.util.MemberChooser/0.23.1440.830@0.23.1440.830" timestamp="1590949141809" />
+    <state width="738" height="152" key="GridCell.Tab.0.bottom" timestamp="1590949982445">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
-    <state width="834" height="152" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1590948450487" />
-    <state width="834" height="152" key="GridCell.Tab.0.left" timestamp="1590948450486">
+    <state width="738" height="152" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1590949982445" />
+    <state width="738" height="152" key="GridCell.Tab.0.center" timestamp="1590949982444">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
-    <state width="834" height="152" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1590948450486" />
-    <state width="834" height="152" key="GridCell.Tab.0.right" timestamp="1590948450487">
+    <state width="738" height="152" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1590949982444" />
+    <state width="738" height="152" key="GridCell.Tab.0.left" timestamp="1590949982443">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
-    <state width="834" height="152" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1590948450487" />
+    <state width="738" height="152" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1590949982443" />
+    <state width="738" height="152" key="GridCell.Tab.0.right" timestamp="1590949982445">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="738" height="152" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1590949982445" />
+    <state x="673" y="196" width="639" height="486" key="find.popup" timestamp="1590949107725">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="673" y="196" width="639" height="486" key="find.popup/0.23.1440.830@0.23.1440.830" timestamp="1590949107725" />
     <state x="299" y="102" key="new project wizard" timestamp="1590942991628">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
@@ -123,5 +131,9 @@
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="571" y="151" width="670" height="675" key="run.anything.popup/0.23.1440.830@0.23.1440.830" timestamp="1590948253242" />
+    <state x="658" y="177" width="670" height="676" key="search.everywhere.popup" timestamp="1590949648706">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="658" y="177" width="670" height="676" key="search.everywhere.popup/0.23.1440.830@0.23.1440.830" timestamp="1590949648706" />
   </component>
 </project>

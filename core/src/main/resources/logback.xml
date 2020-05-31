@@ -7,7 +7,9 @@
 
     <logger name="academy.learnprogramming" level="DEBUG"/>
 
-    <root level="INFO">
+    <logger name="org.springframework" level="DEBUG"/>
+
+    <root level="DEBUG">
         <appender-ref ref="STDOUT"/>
     </root>
 </configuration>
