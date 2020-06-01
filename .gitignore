@@ -4,4 +4,4 @@
 .project
 .settings/
 target/
-core/target/
+/core/target/
