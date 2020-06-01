@@ -14,7 +14,6 @@ public class MessageGeneratorImpl implements MessageGenerator {
 	// == fields ==
 	@Autowired
 	private Game game;
-	private int guessCount = 10;
 
 	// == public methods ==
 	@PostConstruct
@@ -38,7 +37,7 @@ public class MessageGeneratorImpl implements MessageGenerator {
 		boolean victory = game.isGameWon();
 		boolean loss = game.isGameLost();
 		boolean validRange = game.isValidNumberRange();
-		boolean canGuess = game.getRemainingGuesses() == guessCount;
+		boolean canGuess = game.getRemainingGuesses() == game.getGuessCount();
 		int remainingGuesses = game.getRemainingGuesses();
 		boolean goHigher = game.getGuess() < game.getNumber();
 
