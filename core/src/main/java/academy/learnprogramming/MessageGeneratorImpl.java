@@ -21,13 +21,41 @@ public class MessageGeneratorImpl implements MessageGenerator {
 	public void init() {
 		log.info("Value of the game: {}", game);
 	}
+
+	// == public methods ==
 	@Override
 	public String getMainMessage() {
-		return "Calling getMainMessage()";
+		return "Number is between " +
+				game.getSmallest() +
+				" and " +
+				game.getBiggest() +
+				". Can you guess it?";
 	}
 
 	@Override
 	public String getResultMessage() {
-		return "Calling getResultMessage(). " + (game.isGameWon() ? "You won!" : "You lost...");
+		int number = game.getNumber();
+		boolean victory = game.isGameWon();
+		boolean loss = game.isGameLost();
+		boolean validRange = game.isValidNumberRange();
+		boolean canGuess = game.getRemainingGuesses() == guessCount;
+		int remainingGuesses = game.getRemainingGuesses();
+		boolean goHigher = game.getGuess() < game.getNumber();
+
+		if(victory) {
+			return "You won! The number was: " + number;
+		} else if(loss) {
+			return "You lost... The number was: " + number;
+		} else if(!validRange) {
+			return "Invalid number range!";
+		} else if(canGuess) {
+			return "Your first guess: ";
+		} else {
+			String direction = "Lower";
+			if(goHigher) {
+				direction = "Higher";
+			}
+			return direction + "! You have " + remainingGuesses + " guess(es) left";
+		}
 	}
 }
