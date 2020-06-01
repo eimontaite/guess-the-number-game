@@ -1,5 +1,8 @@
 academy/learnprogramming/NumberGeneratorImpl.class
+academy/learnprogramming/MessageGeneratorImpl.class
 academy/learnprogramming/Game.class
+META-INF/core.kotlin_module
 academy/learnprogramming/GameImpl.class
-academy/learnprogramming/Main.class
+academy/learnprogramming/MessageGenerator.class
 academy/learnprogramming/NumberGenerator.class
+academy/learnprogramming/AppConfig.class
