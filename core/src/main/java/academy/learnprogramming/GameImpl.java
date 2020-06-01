@@ -30,7 +30,7 @@ public class GameImpl implements Game {
 	@Override
 	public void reset() {
 		smallest = numberGenerator.getMinNumber();
-		guess = 0;
+		guess = numberGenerator.getMinNumber();
 		remainingGuesses = guessCount;
 		biggest = numberGenerator.getMaxNumber();
 		number = numberGenerator.next();
