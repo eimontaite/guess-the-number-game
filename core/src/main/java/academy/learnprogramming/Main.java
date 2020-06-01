@@ -17,7 +17,7 @@ public class Main {
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
 		// get the number generator bean from the container
-		NumberGenerator numberGenerator = context.getBean("numberGenerator", NumberGenerator.class);
+		NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
 
 		// call next() to get a random number
 		int number = numberGenerator.next();
@@ -26,7 +26,7 @@ public class Main {
 		log.info("number = {}", number);
 
 		// get the game bean from the container
-		Game game = context.getBean("game", Game.class);
+		Game game = context.getBean(Game.class);
 
 		// close the container
 		context.close();

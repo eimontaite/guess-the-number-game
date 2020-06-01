@@ -5,12 +5,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:annotation-config/>
-    <bean id="numberGenerator" class="academy.learnprogramming.NumberGeneratorImpl"/>
-    <bean id="game" class="academy.learnprogramming.GameImpl">
-<!--        commenting out because Autowired annotation is used on instance variables -->
-<!--        <constructor-arg ref="numberGenerator"/>-->
-<!--        <property name="numberGenerator" ref="numberGenerator"/>-->
-    </bean>
+    <context:component-scan base-package="academy.learnprogramming"/>
 
 </beans>
