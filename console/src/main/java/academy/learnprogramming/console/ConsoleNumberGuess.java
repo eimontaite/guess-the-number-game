@@ -4,8 +4,6 @@ import academy.learnprogramming.Game;
 import academy.learnprogramming.MessageGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
@@ -18,11 +16,14 @@ public class ConsoleNumberGuess {
 	public static final Logger log = LoggerFactory.getLogger(ConsoleNumberGuess.class);
 
 	// == fields ==
-	@Autowired
-	private Game game;
+	private final Game game;
 
-	@Autowired
-	private MessageGenerator messageGenerator;
+	private final MessageGenerator messageGenerator;
+
+	public ConsoleNumberGuess(Game game, MessageGenerator messageGenerator) {
+		this.game = game;
+		this.messageGenerator = messageGenerator;
+	}
 
 	// == events ==
 	@EventListener(ContextRefreshedEvent.class)
