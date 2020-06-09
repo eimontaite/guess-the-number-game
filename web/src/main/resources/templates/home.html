@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Guess the Number Game</title>
+<head th:replace="~{fragments/head::headFragment}">
 </head>
 <body>
 <div align="center">
     <h1>Welcome to the Number Game</h1>
     <a th:text="Play"
-       th:href="@{__${T(academy.learnprogramming.util.GameMappings).PLAY}__}">Click to Play</a>
+       th:href="@{__${T(academy.learnprogramming.util.GameMappings).PLAY}__}"
+        href="play.html">Click to Play</a>
 </div>
 </body>
 </html>
