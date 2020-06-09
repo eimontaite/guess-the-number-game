@@ -45,4 +45,11 @@ public class GameController {
 		gameService.checkGuess(guess);
 		return GameMappings.REDIRECT;
 	}
+
+	@GetMapping(GameMappings.RESTART)
+	public String restart() {
+		log.info("Restarting");
+		gameService.reset();
+		return ViewNames.PLAY;
+	}
 }
