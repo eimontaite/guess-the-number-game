@@ -7,7 +7,10 @@
     <h1>Welcome to the Number Game</h1>
     <a th:text="Play"
        th:href="@{__${T(academy.learnprogramming.util.GameMappings).PLAY}__}"
-        href="play.html">Click to Play</a>
+       href="play.html">Click to Play</a>
+</div>
+<div align="center">
+    <footer th:replace="~{fragments/footer::footerFragment}"></footer>
 </div>
 </body>
 </html>
