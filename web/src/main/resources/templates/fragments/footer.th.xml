@@ -1,3 +1,4 @@
 <thlogic>
     <attr sel="#footerId" th:fragment="footerFragment"/>
+    <attr sel="#footerId" th:text="#{game.footer}"/>
 </thlogic>
