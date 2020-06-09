@@ -13,6 +13,14 @@ import javax.annotation.PostConstruct;
 public class MessageGeneratorImpl implements MessageGenerator {
 	// == constants ==
 	private static final String MAIN_MESSAGE = "game.main.message";
+	private static final String WON = "game.won";
+	private static final String LOST = "game.lost";
+	private static final String INVALID_RANGE = "game.invalid.range";
+	private static final String FIRST_GUESS = "game.first.guess";
+	private static final String LOWER = "game.lower";
+	private static final String HIGHER = "game.higher";
+	private static final String REMAINING_GUESSES = "game.remaining.guesses";
+
 	// == fields ==
 	private final Game game;
 	private final MessageSource messageSource;
@@ -46,19 +54,20 @@ public class MessageGeneratorImpl implements MessageGenerator {
 		boolean goHigher = game.getGuess() < game.getNumber();
 
 		if(victory) {
-			return "You won! The number was: " + number;
+			return getMessage(WON, number);
 		} else if(loss) {
-			return "You lost... The number was: " + number;
+			return getMessage(LOST, number);
 		} else if(!validRange) {
-			return "Invalid number range!";
+			return getMessage(INVALID_RANGE);
 		} else if(canGuess) {
-			return "Your first guess: ";
+			return getMessage(FIRST_GUESS);
 		} else {
-			String direction = "Lower";
+			String direction = getMessage(LOWER);
+			;
 			if(goHigher) {
-				direction = "Higher";
+				direction = getMessage(HIGHER);
 			}
-			return direction + "! You have " + remainingGuesses + " guess(es) left";
+			return getMessage(REMAINING_GUESSES, direction, remainingGuesses);
 		}
 	}
 
