@@ -4,7 +4,7 @@
 </head>
 <body>
     <div align="center">
-        <h1>Guess the Number Game</h1>
+        <h1 id="gameTitle"></h1>
         <h3 id="mainMessage">
             Main Message Content
         </h3>
@@ -13,9 +13,9 @@
         </h3>
 
         <form id="formId" method="post">
-            <label for="guess">Enter your guess</label>
+            <label id="guessLabel" for="guess"></label>
             <input id="guess" type="number" name="guess"/>
-            <input type="submit" value="Submit"/>
+            <input id="submit" type="submit"/>
         </form>
     </div>
     <div align="center">
